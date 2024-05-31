@@ -42,8 +42,14 @@ result is a categorical variable, sex is categorical result depends on sex, we u
 
 ## Graphical results - use ggplot commands to do this  
 
+```{r}
+barchartGC(~result + Sex,data=kRdata)
+barchartGC(~result + Sex,data=ucdavis1, type="percent")
 
+```
+This barchart shows the frequency of women to men in comparison to being alive is greater , and being dead is lower than that of men. 
 
+This barchart shows....
   
 
 
