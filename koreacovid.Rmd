@@ -44,8 +44,7 @@ result is a categorical variable, sex is categorical result depends on sex, we u
 
 ```{r}
 barchartGC(~result + Sex,data=kRdata)
-barchartGC(~result + Sex,data=ucdavis1, type="percent")
-
+barchartGC(~result + Sex,data=kRdata,  type="percent")
 ```
 This barchart shows the frequency of women to men in comparison to being alive is greater , and being dead is lower than that of men. 
 
@@ -60,6 +59,13 @@ This barchart shows....
 ## Numerical results
 
 
+```{r}
+table1 <- xtabs (~result + sex, data=kRdata)
+rowPerc(table1)
+colPerc(table1)
+```
+
+this numerical summary shows that...
 ## Inferential results 
 
 
