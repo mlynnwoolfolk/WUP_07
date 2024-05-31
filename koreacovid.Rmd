@@ -84,4 +84,5 @@ The Fisher exact test shows that men are 2.3 tomes more likely to die than women
 
 
 ## Conclusions
+The original question was, is there a relationship between sex and deaths in Korea due to covid. The p-value was 0.001, meaning that deaths caused by covid in Korea is not independent of gender . The Fisher test shows that men are 2.3 times more likely to die from covid compared to women in Korea. There is a relationship between gender or sex, and he amount of deaths in Korea during or due to Covid. 
 
