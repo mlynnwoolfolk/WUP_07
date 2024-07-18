@@ -39,11 +39,17 @@ result is a categorical variable, sex is categorical
 result depends on sex, we use helper file 
 cat~cat  
 
+# Results 
+
 
 ## Graphical results - use ggplot commands to do this
 
+```{r}
+barchartGC(~result + Sex,data=kRdata)
+barchartGC(~result + Sex,data=kRdata, type="percent")
 
-
+```
+This barchart shows that...
 
 
 
@@ -65,13 +71,6 @@ cat~cat
 $h_0$: there is no difference in .....
 
 $H_A$: There is no difference in ...
-
-# Methods
-
-result is a categorical variable, sex is categorical result depends on sex, we use helper file cat~cat
-
-
-
 
 
 
