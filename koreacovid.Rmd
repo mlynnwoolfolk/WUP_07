@@ -32,6 +32,10 @@ state of a patient must be died or alive - we adjust that as well
 
 # Your Question - Is dying independent of sex?
 
+$H_0$: There is no difference in  .......    
+
+$H_A$: There is a difference in.....    
+
 
 # Methods 
 
@@ -72,35 +76,13 @@ this numerical summary shows that...
 ## Inferential results
 
 
-
-
-## Conclusions
-
-
-$h_0$: there is no difference in .....
-
-$H_A$: There is no difference in ...
-
-
-
-
-
-```{r}
-table1 <- xtabs (~result + sex, data=kRdata)
-rowPerc(table1)
-colPerc(table1)
-```
-
-this numerical summary shows that...
-
-## Inferential results 
-
 ```{r}
 chisq.test(table1)
 chisqtestGC(table1)
 fisher.test(table1)
 ```
-The p-value for the chi-squared test is 0.001, so we reject the null hypothesis.
+
+The p-value for the Chi-squared test is 0.001, so we reject the null hypothesis.
 
 The Fisher exact test shows that men are 2.3 tomes more likely to die than women in Korea. 
 
