@@ -59,6 +59,15 @@ This barchart shows that...
 
 ## Numerical results 
 
+```{r}
+table1 <- xtabs(~result + Sex, data=kRdata)
+rowPerc(table1)
+colPerc(table1)
+```
+this numerical summary shows that...
+
+
+
 
 ## Inferential results
 
