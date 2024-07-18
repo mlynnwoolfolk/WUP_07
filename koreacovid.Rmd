@@ -23,14 +23,44 @@ mutate(across(where(is.character), as.factor))
 
 
 
-### Data is from the Patient_Info dataset from South Korea 1 Jan to 1 May 2020
-### This data was retrieved from a downloadable zip file from kaggle
+### Data is from the Patient_Info dataset from South   Korea 1 Jan to 1 May 2020  
+### This data was retrieved from a downloadable zip file from kaggle  
 
-Some of the data was uncoded for sex - sex must be just male or female
-77 of the data entries were coded sex  as blank, so we omit these.
-state of a patient must be died or alive - we adjust that as well   
-  
+Some of the data was uncoded for sex - sex must be just male or female  
+77 of the data entries were coded sex  as blank, so we omit these.  
+state of a patient must be died or alive - we adjust that as well    
+
 # Your Question - Is dying independent of sex?
+
+
+# Methods 
+
+result is a categorical variable, sex is categorical   
+result depends on sex, we use helper file 
+cat~cat  
+
+
+## Graphical results - use ggplot commands to do this
+
+
+
+
+
+
+
+
+
+
+## Numerical results 
+
+
+## Inferential results
+
+
+
+
+## Conclusions
+
 
 $h_0$: there is no difference in .....
 
@@ -43,23 +73,7 @@ result is a categorical variable, sex is categorical result depends on sex, we u
 
 
 
-## Graphical results - use ggplot commands to do this  
 
-```{r}
-barchartGC(~result + Sex,data=kRdata)
-barchartGC(~result + Sex,data=kRdata,  type="percent")
-```
-This barchart shows the frequency of women to men in comparison to being alive is greater , and being dead is lower than that of men. 
-
-This barchart shows....
-  
-
-
-
-
-
-  
-## Numerical results
 
 
 
