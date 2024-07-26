@@ -1,7 +1,7 @@
 ---
 title: "Cat~Cat"
-author: "Dr K"
-date: "November 25, 2018"
+author: "mariahlynn"
+date: "May 30, 2024"
 output: html_document
 ---
 
@@ -41,7 +41,7 @@ basicCC <- ggplot(dd2,aes(x=class,y=prcnt*100,fill=Sex))
 basicCC + geom_bar(stat="identity", position = "dodge")
 # results 
 ```
-
+ 
 
   
 ###Numerical Summaries  
