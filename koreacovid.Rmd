@@ -53,7 +53,7 @@ barchartGC(~result + Sex,data=kRdata)
 barchartGC(~result + Sex,data=kRdata, type="percent")
 
 ```
-This barchart shows that...
+This barchart shows that the frequency of women to men in comparison to being alive is greater, and being dead is lower than that of men.
 
 
 
@@ -68,7 +68,7 @@ table1 <- xtabs(~result + Sex, data=kRdata)
 rowPerc(table1)
 colPerc(table1)
 ```
-this numerical summary shows that...
+this numerical summary shows that women were alive 12 more than men. 
 
 
 
